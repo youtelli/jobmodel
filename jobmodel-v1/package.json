@@ -1,0 +1,60 @@
+{
+  "name": "@jobchase/jobmodel",
+  "version": "0.2.5",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "tslint --type-check --project tsconfig.json src/**/*.ts",
+    "test": "tsc && karma start",
+    "prepublish": "tsc",
+    "tsc": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/jobchase/jobmodel"
+  },
+  "author": {
+    "name": "Harry Y",
+    "email": "sidewaybot@gmail.com"
+  },
+  "keywords": [
+    "jobchase"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/jobchase/jobmodel/issues"
+  },
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "dependencies": {
+    "@angular/common": "^5.0.0",
+    "@angular/compiler": "^5.0.0",
+    "@angular/core": "^5.0.0",
+    "@angular/forms": "^5.0.0",
+    "@angular/http": "^5.0.0",
+    "@angular/platform-browser": "^5.0.0",
+    "@angular/platform-browser-dynamic": "^5.0.0",
+    "@ngcore/auth": "~0.5.3",
+    "@ngcore/base": "~0.5.3",
+    "@ngcore/core": "~0.5.3",
+    "@ngcore/mark": "~0.5.3",
+    "commonmark": "^0.28.1",
+    "rxjs": "^5.5.2",
+    "sw-toolbox": "~3.6.0",
+    "zone.js": "^0.8.18"
+  },
+  "devDependencies": {
+    "@angular/cli": "^1.5.0",
+    "@angular/compiler-cli": "^5.0.0",
+    "@angular/language-service": "^5.0.0",
+    "@types/node": "^8.0.52",
+    "protractor": "^5.1.2",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.1",
+    "@types/commonmark": "^0.27.0",
+    "ts-loader": "^2.3.4"
+  },
+  "engines": {
+    "node": ">=6.10.0"
+  }
+}
